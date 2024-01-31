@@ -19,7 +19,7 @@
           <a href="#" class="logo">Bags</a>
           <div class="bx bx-menu" id="menu-icon"></div>
 
-          <ul class="navbar">
+          <ul class="navbar" id="navbar">
                <li><a href="#Shop">Shop</a></li>
                <li><a href="#About">About</a></li>
                <li><a href="#FAq">Faq</a></li>
@@ -199,7 +199,21 @@
      </div>
 
 
-     <!-- custom js link -->
+     
      <script src="js/script.js"></script>
+     <script>
+          
+          const menuIcon = document.getElementById("menu-icon");
+          const navbar = document.getElementById("navbar");
+
+     
+          function toggleNavbar() {
+               navbar.classList.toggle("active");
+               
+          }
+
+     
+          menuIcon.addEventListener("click", toggleNavbar);
+     </script>
 </body>
 </html>
